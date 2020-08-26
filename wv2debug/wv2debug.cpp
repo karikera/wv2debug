@@ -10,7 +10,8 @@ int main(int argn, char** argv, char **env) {
 
 	stringstream ss;
 
-	for (int i = 1; i < argn; i++) {
+	ss << "argn: " << argn << endl;
+	for (int i = 0; i < argn; i++) {
 		ss << "argv[" << i << "]: " << argv[i] << endl;
 	}
 
